@@ -11,10 +11,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <div className="bg-pp-3-background">
-      <>
-        <Navbar />
-        <body className={inter.className}>{children}</body>
-      </>
+      <div className="flex justify-center">
+        <div className="w-[1100px] flex justiy-center flex-col">
+          <>
+            <Navbar />
+            <body className={inter.className}>{children}</body>
+          </>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 import Hero from './Hero'
+import Become from './Become'
 const Body = () => {
   return (
-    <div className='flex justify-center items-center'>
+    <div className=''>
       <Hero/>
+      <Become/>
     </div>
   )
 }
